@@ -50,9 +50,9 @@ Before you begin, ensure you have the following:
    uv add "mcp[cli]"
    ```
 3. Set up your environment variables:
-   Intsert Groq and Tavily api key in keys.json
+   Update Groq and Tavily api key in keys.json
    
-4.. Optional (To run the server with the MCP Inspector for development):
+4. Optional (To run the server with the MCP Inspector for development):
   ```
   uv run mcp dev server.py
   ```

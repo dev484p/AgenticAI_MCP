@@ -64,15 +64,15 @@ Before you begin, ensure you have the following:
 ## Available Tools
 
 The system provides three tools through the MCP server:
-* Wiki Search:
-  Access Wikipedia information
-  Example query: "Tell me about the history of artificial intelligence"
-* Internet Search (Tavily):
-  Get comprehensive web search results
-  Example query: "What are the latest developments in quantum computing?"
-* Yahoo Finance:
-  Access stock prices and financial data
-  Example query: "What is the current price of AAPL stock?"
+1. Wiki Search:
+  * Access Wikipedia information
+  * Example query: "Tell me about the history of artificial intelligence"
+2. Internet Search (Tavily):
+  * Get comprehensive web search results
+  * Example query: "What are the latest developments in quantum computing?"
+3. Yahoo Finance:
+  * Access stock prices and financial data
+  * Example query: "What is the current price of AAPL stock?"
 
 ## Refrence
 * https://modelcontextprotocol.io/introduction

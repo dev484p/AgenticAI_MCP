@@ -1,5 +1,6 @@
 import httpx
 import logging
+import json
 import urllib.parse
 from typing import Any
 from datetime import datetime
@@ -23,7 +24,9 @@ YAHOO_FINANCE_BASE = "https://query1.finance.yahoo.com/v8/finance/chart/"
 USER_AGENT = "search-app/1.0"
 
 # Load API key from environment variable
-TAVILY_API_KEY = "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"
+with open("./keys.json", "r") as file:
+        data = json.load(file)
+TAVILY_API_KEY = data["TAVILY_API"]
 if not TAVILY_API_KEY:
     logger.error("TAVILY_API_KEY environment variable not set")
     raise ValueError("TAVILY_API_KEY environment variable not set")

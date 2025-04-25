@@ -1,13 +1,16 @@
 import asyncio
+import json
 from langchain_groq import ChatGroq
 from mcp_use import MCPAgent, MCPClient
 
 async def run_memory_chat():
-    """Run a chat using MCPAgent's built-in conversation memory."""
+    with open("./keys.json", "r") as file:
+        data = json.load(file)
+    GROQ_API = data["GROQ_API"]
     config_file = "tools.json"
-
+    
     client = MCPClient.from_config_file(config_file)
-    llm = ChatGroq(api_key="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",model="qwen-qwq-32b")
+    llm = ChatGroq(api_key=GROQ_API,model="qwen-qwq-32b")
 
     agent = MCPAgent(
         llm=llm,
